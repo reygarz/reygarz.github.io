@@ -116,8 +116,8 @@ const CppTerminal: React.FC<{ theme: AppTheme }> = ({ theme }) => {
           <div className="flex-1 p-4 font-mono text-sm overflow-auto bg-black/50">
             {isCompiling && (
                 <div className="flex flex-col gap-1 text-yellow-500 animate-pulse">
-                    <span>> g++ main.cpp -o out</span>
-                    <span>> Compiling...</span>
+                    <span>&gt; g++ main.cpp -o out</span>
+                    <span>&gt; Compiling...</span>
                 </div>
             )}
             {output && (

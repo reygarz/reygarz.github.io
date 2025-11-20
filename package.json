@@ -3,10 +3,10 @@
   "private": true,
   "version": "5.1.0",
   "type": "module",
-  "homepage": "https://reygarz.github.io/reygarz.github.io",
+  "homepage": "https://reygarz.github.io/jk-technolibrary",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
