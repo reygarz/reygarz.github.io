@@ -3,13 +3,10 @@
   "private": true,
   "version": "5.1.0",
   "type": "module",
-  "homepage": "https://reygarz.github.io/jk-technolibrary",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
@@ -25,7 +22,6 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "gh-pages": "^6.1.1",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }

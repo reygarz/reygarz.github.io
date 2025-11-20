@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // ВАЖНО: Замените 'jk-technolibrary' на название вашего репозитория на GitHub!
-  base: '/jk-technolibrary/',
+  // Для Netlify (и большинства других хостингов) путь должен быть корневым '/'
+  base: '/',
   build: {
     outDir: 'dist',
   }

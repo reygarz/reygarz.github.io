@@ -18,9 +18,9 @@ const Sidebar: React.FC<SidebarProps> = ({ theme, isOpen, setIsOpen, currentPath
   const [mode, setMode] = useState<'focus' | 'break'>('focus');
 
   useEffect(() => {
-    let interval: any;
+    let interval: NodeJS.Timeout;
     if (isActive && timeLeft > 0) {
-      interval = setInterval(() => setTimeLeft((prev: number) => prev - 1), 1000);
+      interval = setInterval(() => setTimeLeft((prev) => prev - 1), 1000);
     } else if (timeLeft === 0) {
       setIsActive(false);
     }
